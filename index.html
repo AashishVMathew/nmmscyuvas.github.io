@@ -27,10 +27,11 @@
             justify-content: space-between;
             align-items: center;
             margin-bottom: 20px;
+            flex-wrap: wrap;
         }
 
         .header img {
-            max-width: 150px;
+            max-width: 100%;
             height: auto;
         }
 
@@ -86,15 +87,29 @@
             display: block;
         }
 
+        .logo-container {
+            flex: 1;
+            text-align: center;
+            margin: 0px;
+        }
+
+        .text-container {
+            flex: 2;
+            text-align: center;
+            margin: 10px;
+        }
+
         /* Media Queries */
         @media (max-width: 768px) {
             .header {
                 flex-direction: column;
                 align-items: center;
+                justify-content: center;
             }
 
             .header img {
-                max-width: 120px;
+                max-width: 70%;
+                /* Adjust the width for better spacing */
                 margin-bottom: 10px;
             }
 
@@ -110,6 +125,10 @@
             li {
                 font-size: 0.9rem;
             }
+
+            .logo-container {
+                margin-bottom: 0px;
+            }
         }
 
         @media (max-width: 480px) {
@@ -123,7 +142,7 @@
             }
 
             .header img {
-                max-width: 100px;
+                max-width: 100%;
             }
 
             h2,
@@ -174,13 +193,17 @@
 <body>
     <div class="container">
         <div class="header">
-            <img src="./Churchlogo.png" alt="Church Logo">
-            <img src="./Yuvaslogo.png" alt="Yuvas Logo">
+            <div class="logo-container">
+                <img src="./Churchlogo.png" alt="Church Logo">
+            </div>
+            <div class="text-container">
+                <h3>NORTH MADRAS MARTHOMA SYRIAN CHURCH</h3>
+                <h2>INTERCHURCH FELLOWSHIP</h2>
+                <p>"A time for interaction, praise and worship, devotion and games."</p>
+            </div>
         </div>
-        <h3>NORTH MADRAS MARTHOMA SYRIAN CHURCH</h3>
-        <h2>INTERCHURCH FELLOWSHIP</h2>
-        <h3 style="font-weight:normal">"A time for interaction, praise and worship, devotion and games."</h3>
-        <h3 style="text-align: left;">Agenda:</h3>
+
+        <h3 style="text-align: left;">Agenda</h3>
         <ul>
             <li style="color: #000000;">Opening Prayer - Angeline Alexander</li>
             <li style="color: #000000;">Welcome Address - Jisha Shaji</li>
@@ -331,6 +354,9 @@
             <li style="color: #000000;">Closing Prayer - Tessia Titus</li>
             <li style="color: #000000;">Benediction - Rev. Thomas George</li>
         </ul>
+        <div class="logo-container">
+            <img src="./Yuvaslogo.png" alt="Yuvas Logo">
+        </div>
     </div>
 </body>
 
