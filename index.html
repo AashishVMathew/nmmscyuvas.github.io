@@ -16,10 +16,11 @@
         .container {
             max-width: 800px;
             margin: 0 auto;
-            background-color: #a2a2a2;
+            background-color: #ffffff;
             padding: 20px;
             border-radius: 8px;
             border: 2px solid #ffffff;
+
         }
 
         .header {
@@ -33,6 +34,11 @@
         .header img {
             max-width: 100%;
             height: auto;
+            border: 2px solid #000000;
+            /* Adjust color and thickness */
+            border-radius: 8px;
+            /* Optional: to make the border rounded */
+            padding: 5px;
         }
 
         h1,
@@ -52,17 +58,18 @@
         li {
             padding: 10px;
             margin: 5px 0;
-            background-color: #cbcbcb;
+            background-color: #e7e7e7;
             border-radius: 4px;
             position: relative;
             cursor: pointer;
             font-family: 'Times New Roman', Times, serif;
+            box-shadow: 10px 10px 15px rgba(0, 0, 0, 0.2);
         }
 
         .lyrics {
             display: none;
             padding: 10px;
-            background-color: #c5c5c5;
+            background-color: #d3d3d3;
             margin-top: 10px;
             border-radius: 4px;
         }
@@ -97,6 +104,12 @@
             flex: 2;
             text-align: center;
             margin: 10px;
+        }
+
+        .yuvs-log {
+            height: 300px;
+            width: 300px;
+
         }
 
         /* Media Queries */
@@ -355,7 +368,7 @@
             <li style="color: #000000;">Benediction - Rev. Thomas George</li>
         </ul>
         <div class="logo-container">
-            <img src="./Yuvaslogo.png" alt="Yuvas Logo">
+            <img src="./Yuvaslogo.png" alt="Yuvas Logo" class="yuvs-log">
         </div>
     </div>
 </body>
